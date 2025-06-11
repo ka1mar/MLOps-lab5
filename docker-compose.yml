@@ -52,7 +52,7 @@ services:
       -i /app/data/en.openfoodfacts.org.products.csv 
       -o /app/data/cluster_results 
       --max_missing 0.3 
-      --min_unique 0.3 
+      --min_unique 0.001
       -v"
 
   word-count-runner:
