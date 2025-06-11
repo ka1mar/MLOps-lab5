@@ -119,7 +119,7 @@ class AutoClusteringPipeline:
             .write.mode("overwrite") \
             .csv(self.output_path, header=True)
 
-        model.save(f"{self.output_path}/model")
+        model.write().overwrite().save(f"{self.output_path}/model")
 
     def run(self):
         try:
